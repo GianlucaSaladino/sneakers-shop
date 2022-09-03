@@ -1,0 +1,11 @@
+.grid-product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 20px;
+}
+
+h1 {
+  color: #fafafa;
+  text-align: center;
+}

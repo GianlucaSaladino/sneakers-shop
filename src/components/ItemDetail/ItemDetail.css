@@ -1,0 +1,29 @@
+.item-detail{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    text-align:center;
+    color: #fafafa;
+}
+
+h2{
+    color: #fafafa;
+}
+
+.item-detail img {
+    width: 100%;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#fafafa;
+}
