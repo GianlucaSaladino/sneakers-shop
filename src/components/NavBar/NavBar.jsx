@@ -1,22 +1,24 @@
-import './NavBar.css';
-import Cart from '../Cart/Cart';
+import "./NavBar.css";
+import Cart from "../Cart/Cart";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <>
       <nav className="nav">
-        <p href="/" className="site-title">
+        <a href="/" className="site-title">
           GS Sneakers
-        </p>
+        </a>
         <ul>
           <li>
-            <a href="/about">About</a>
+            <Link to="/" className="links">Home</Link>
+            {/* <a href="/" className="links">Home</a> */}
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <a href="/products" className="links">Products</a>
           </li>
           <li>
-            <a href="/products">Products</a>
+            <a href="/contact" className="links">Contact</a>
           </li>
         </ul>
         <Cart />
