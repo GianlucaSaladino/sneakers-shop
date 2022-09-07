@@ -6,20 +6,23 @@ const NavBar = () => {
   return (
     <>
       <nav className="nav">
-        <a href="/" className="site-title">
+        <Link to="/" className="site-title">
           GS Sneakers
-        </a>
+        </Link>
+
         <ul>
-          <li>
-            <Link to="/" className="links">Home</Link>
-            {/* <a href="/" className="links">Home</a> */}
-          </li>
-          <li>
-            <a href="/products" className="links">Products</a>
-          </li>
-          <li>
-            <a href="/contact" className="links">Contact</a>
-          </li>
+          <Link to="/" className="links">
+            Home
+          </Link>
+          <Link to="/products" className="links">
+            Products
+          </Link>
+          <Link to="/products/high" className="links">
+            High
+          </Link>
+          <Link to="/products/low" className="links">
+            Low
+          </Link>
         </ul>
         <Cart />
       </nav>

@@ -1,29 +1,38 @@
-import { useState, useEffect } from 'react'
-import getFetch from '../../helper/helper'
-import './ItemDetail.css'
+import { useState, useEffect } from "react";
+import getFetch from "../../helper/helper";
+import "./ItemDetail.css";
+import { products } from "../../helper/helper";
+import { useParams } from "react-router-dom";
 
 const ItemDetail = () => {
-  const [data, setData] = useState({});
+  const { productId } = useParams();
+  const [data, setData] = useState([]);
+
+  const getProduct = (id) => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        const product = products.find((item) => item.id === parseInt(id));
+        resolve(product);
+      }, 2000);
+    });
+  };
 
   useEffect(() => {
-    getFetch.then((response) => {
-      setData(response.find((prod) => prod.id === 1));
+    getFetch.then((data) => {
+      if (!productId) {
+        setData(data);
+      } else {
+        getProduct(productId).then((data) => setData(data));
+      }
     });
-  }, []);
+  }, [productId]);
 
-  console.log(data);
   return (
     <div className="item-container">
-      <h1>Item Detail Container</h1>
       <div className="item-detail">
         <img src={data.img} alt="" />
         <h2>{data.name}</h2>
-        <h3>{data.price}</h3>
-
-        <div className="detail">
-          <h4>{data.type}</h4>
-          <p>{data.category}</p>
-        </div>
+        <h3>${data.price}</h3>
         <p>{data.description}</p>
       </div>
     </div>
