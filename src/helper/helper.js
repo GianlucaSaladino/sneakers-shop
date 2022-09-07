@@ -15,7 +15,7 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    category: "jordan",
+    brand: "jordan",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    category: "jordan",
+    brand: "jordan",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    category: "jordan",
+    brand: "jordan",
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    category: "jordan",
+    brand: "jordan",
   },
   {
     id: 5,
@@ -55,7 +55,7 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    category: "jordan",
+    brand: "jordan",
   },
   {
     id: 6,
@@ -65,7 +65,7 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "low",
-    category: "jordan",
+    brand: "jordan",
   },
   {
     id: 7,
@@ -75,7 +75,7 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "low",
-    category: "jordan",
+    brand: "jordan",
   },
   {
     id: 8,
@@ -85,7 +85,7 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    category: "converse",
+    brand: "converse",
   },
   {
     id: 9,
@@ -95,7 +95,7 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    category: "converse",
+    brand: "converse",
   },
 ];
 

@@ -6,32 +6,32 @@ import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const ItemList = () => {
-  const { productType } = useParams();
+  const { productBrand } = useParams();
   const [data, setData] = useState([]);
 
   useEffect(() => {
     getFetch.then((data) => {
-      if (!productType) {
+      if (!productBrand) {
         setData(data);
       } else {
-        const filteredData = data.filter((item) => item.type === productType);
+        const filteredData = data.filter((item) => item.type === productBrand);
         setData(filteredData);
       }
     });
-  }, [productType]);
+  }, [productBrand]);
 
   return (
-    <>
-      <h1>Productos:</h1>
-
-      <div className="grid-product">
-        {data.map((data) => (
-          <Link key={data.id} to={`/item/${data.id}`}>
-            <Item data={data} />
-          </Link>
-        ))}
-      </div>
-    </>
+    <div className="grid-product">
+      {data.map((data) => (
+        <Link
+          style={{ textDecoration: "none" }}
+          key={data.id}
+          to={`/item/${data.id}`}
+        >
+          <Item data={data} />
+        </Link>
+      ))}
+    </div>
   );
 };
 

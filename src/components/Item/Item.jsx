@@ -1,14 +1,13 @@
-import React from 'react'
-import './Item.css'
+import React from "react";
+import "./Item.css";
 
 const Item = ({ data }) => {
   return (
-    
-      <div className="item" key={data.name}>
-        <img src={data.img} alt="" />
-        <h1>{data.name}</h1>
-        <h2>${data.price}</h2>
-      </div>
+    <div className="item" key={data.name}>
+      <img className="item-image" src={data.img} alt="" />
+      <h1 className="item-text">{data.name}</h1>
+      <h2 className="item-text">${data.price}</h2>
+    </div>
   );
 };
 

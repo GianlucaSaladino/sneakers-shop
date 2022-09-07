@@ -10,10 +10,9 @@ const ItemDetail = () => {
 
   const getProduct = (id) => {
     return new Promise((resolve) => {
-      setTimeout(() => {
         const product = products.find((item) => item.id === parseInt(id));
         resolve(product);
-      }, 2000);
+
     });
   };
 
