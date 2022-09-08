@@ -8,6 +8,12 @@
   font-weight: bold;
 }
 
+.logo-brand img {
+  height: 3.5rem;
+  width: 3.5rem;
+  margin-right: 10px;
+}
+
 .product-hover:hover {
   color: rgba(0, 0, 0, 0.7) !important;
 }

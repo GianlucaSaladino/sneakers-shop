@@ -10,9 +10,8 @@ const ItemDetail = () => {
 
   const getProduct = (id) => {
     return new Promise((resolve) => {
-        const product = products.find((item) => item.id === parseInt(id));
-        resolve(product);
-
+      const product = products.find((item) => item.id === parseInt(id));
+      resolve(product);
     });
   };
 
@@ -28,8 +27,10 @@ const ItemDetail = () => {
 
   return (
     <div className="item-container">
-      <div className="item-detail">
+      <div className="item-image">
         <img src={data.img} alt="" />
+      </div>
+      <div className="item-detail">
         <h2>{data.name}</h2>
         <h3>${data.price}</h3>
         <p>{data.description}</p>

@@ -18,6 +18,7 @@ const NavBar = () => {
               style={{ color: "#000", textDecoration: "none" }}
               to="/"
             >
+              <img src="https://www.vectorkhazana.com/assets/images/products/Sneaker.png" alt="" />
               GS SNEAKERS
             </Link>
           </Nav.Link>
@@ -29,7 +30,7 @@ const NavBar = () => {
               <Link
                 className="product-hover"
                 style={{ color: "rgba(0, 0, 0, 0.55)", textDecoration: "none" }}
-                to="/products"
+                to="/sneakers"
               >
                 Sneakers
               </Link>
@@ -39,7 +40,7 @@ const NavBar = () => {
                 <Link
                   className="dropdown-item-hover"
                   style={{ color: "#000", textDecoration: "none" }}
-                  to="/products/high"
+                  to="/sneakers/jordan"
                 >
                   Jordan
                 </Link>
@@ -48,7 +49,7 @@ const NavBar = () => {
                 <Link
                   className="dropdown-item-hover"
                   style={{ color: "#000", textDecoration: "none" }}
-                  to="/products/low"
+                  to="/sneakers/nike"
                 >
                   Nike
                 </Link>
@@ -57,7 +58,7 @@ const NavBar = () => {
                 <Link
                   className="dropdown-item-hover"
                   style={{ color: "#000", textDecoration: "none" }}
-                  to="/products/low"
+                  to="/sneakers/converse"
                 >
                   Converse
                 </Link>
@@ -66,7 +67,7 @@ const NavBar = () => {
                 <Link
                   className="dropdown-item-hover"
                   style={{ color: "#000", textDecoration: "none" }}
-                  to="/products/low"
+                  to="/sneakers/yeezy"
                 >
                   Yeezy
                 </Link>

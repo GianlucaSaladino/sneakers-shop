@@ -14,7 +14,7 @@ const ItemList = () => {
       if (!productBrand) {
         setData(data);
       } else {
-        const filteredData = data.filter((item) => item.type === productBrand);
+        const filteredData = data.filter((item) => item.brand === productBrand);
         setData(filteredData);
       }
     });

@@ -13,9 +13,9 @@ function App() {
       <div className="App">
         <NavBar />
         <Routes>
-          <Route path="/products" element={<ItemListContainer />} />
+          <Route path="/sneakers" element={<ItemListContainer />} />
           <Route
-            path="/products/:productBrand"
+            path="/sneakers/:productBrand"
             element={<ItemListContainer />}
           />
           <Route path="/item/:productId" element={<ItemDetailContainer />} />
