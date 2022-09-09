@@ -40,6 +40,15 @@ const NavBar = () => {
                 <Link
                   className="dropdown-item-hover"
                   style={{ color: "#000", textDecoration: "none" }}
+                  to="/sneakers/converse"
+                >
+                  Converse
+                </Link>
+              </Nav.Link>
+              <Nav.Link className="nav-links" href="#">
+                <Link
+                  className="dropdown-item-hover"
+                  style={{ color: "#000", textDecoration: "none" }}
                   to="/sneakers/jordan"
                 >
                   Jordan
@@ -52,15 +61,6 @@ const NavBar = () => {
                   to="/sneakers/nike"
                 >
                   Nike
-                </Link>
-              </Nav.Link>
-              <Nav.Link className="nav-links" href="#">
-                <Link
-                  className="dropdown-item-hover"
-                  style={{ color: "#000", textDecoration: "none" }}
-                  to="/sneakers/converse"
-                >
-                  Converse
                 </Link>
               </Nav.Link>
               <Nav.Link className="nav-links" href="#">

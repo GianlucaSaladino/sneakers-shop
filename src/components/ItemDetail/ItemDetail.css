@@ -11,6 +11,12 @@
   align-items: center;
 }
 
+.item-image img {
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+}
+
 .item-detail {
   display: flex;
   flex-direction: column;

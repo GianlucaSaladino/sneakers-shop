@@ -1,11 +1,15 @@
+import "./Cart.css";
 
 const Cart = () => {
   return (
-    <>
-    <a href=" ">
-      <img class="cartImage" src="https://www.freeiconspng.com/thumbs/cart-icon/basket-cart-icon-27.png" alt="cart" />
-    </a>
-    </>
+    <div className="cart-container">
+      <p className="cart-count">0</p>
+      <img
+        class="cartImage"
+        src="https://www.freeiconspng.com/thumbs/cart-icon/basket-cart-icon-27.png"
+        alt="cart"
+      />
+    </div>
   );
 };
 

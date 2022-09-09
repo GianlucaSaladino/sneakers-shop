@@ -1,4 +1,18 @@
-
+.catalog-container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  margin-top: 2rem;
+}
+.sneakers-image-grid {
+  display: flex;
+  justify-content: center;
+  max-height: 45rem;
+  max-width: 100%;
+  margin: 20px;
+  padding: 16px 16px 0 16px;
+}
 
 .image-grid {
   --gap: 16px;
@@ -6,8 +20,8 @@
   --row-height: 300px;
 
   box-sizing: border-box;
-  margin: 20px;
-  padding: var(--gap);
+  margin: 0 20px 20px 20px;
+  padding: 0 var(--gap) var(--gap) var(--gap);
 
   display: grid;
   grid-template-columns: repeat(var(--num-cols), 1fr);

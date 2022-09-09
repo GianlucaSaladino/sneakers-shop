@@ -1,14 +1,21 @@
+import React,{useState} from 'react'
 import ItemDetail from "../ItemDetail/ItemDetail";
 import Counter from "../Counter/Counter";
+import "./ItemDetailContainer.css";
 
 const ItemDetailContainer = () => {
+  const [show, setShow] = useState(true);
+
   function onAdd(count) {
-    alert(`Se han agregado ${count} productos`);
+    console.log(`Se han agregado ${count} productos`);
+    setShow(!show);
   }
   return (
     <div>
       <ItemDetail />
-      <Counter stock={5} onAdd={onAdd} min={1} sum={1} res={1} />
+      <div className={show ? '' : 'inactive'}>
+        <Counter stock={5} onAdd={onAdd} num={1} />
+      </div>
     </div>
   );
 };

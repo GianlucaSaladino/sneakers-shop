@@ -1,23 +1,23 @@
 import { useState } from "react";
 import "./Counter.css";
 
-const Counter = ({ stock, onAdd, min, sum, res }) => {
-  const [count, setCount] = useState(min);
+const Counter = ({ stock, onAdd, num }) => {
+  const [count, setCount] = useState(num);
 
   function add() {
     if (count < stock) {
-      setCount(count + sum);
+      setCount(count + num);
     }
   }
 
   function substract() {
-    if (count >= min) {
-      setCount(count - res);
+    if (count >= num) {
+      setCount(count - num);
     }
   }
 
   function reset() {
-    setCount(min);
+    setCount(num);
   }
 
   return (
