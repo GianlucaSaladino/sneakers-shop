@@ -1,5 +1,5 @@
 import "./NavBar.css";
-import Cart from "../Cart/Cart";
+import CartNav from "../Cart/CartNav/CartNav";
 import { Link } from "react-router-dom";
 
 import Container from "react-bootstrap/Container";
@@ -75,7 +75,7 @@ const NavBar = () => {
             </NavDropdown>
           </Nav>
           <div style={{ cursor: "pointer", fontSize: "25px" }}>
-            <Cart />
+            <CartNav />
           </div>
         </Navbar.Collapse>
       </Container>

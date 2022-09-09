@@ -1,20 +1,25 @@
-import React,{useState} from 'react'
+import React, { useState } from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import Counter from "../Counter/Counter";
 import "./ItemDetailContainer.css";
+import { Link } from "react-router-dom";
 
 const ItemDetailContainer = () => {
-  const [show, setShow] = useState(true);
+  const [goToCart, setGoToCart] = useState(false);
 
   function onAdd(count) {
     console.log(`Se han agregado ${count} productos`);
-    setShow(!show);
+    setGoToCart(true);
   }
   return (
     <div>
       <ItemDetail />
-      <div className={show ? '' : 'inactive'}>
-        <Counter stock={5} onAdd={onAdd} num={1} />
+      <div className="goCart">
+        {goToCart ? (
+          <Link className="linkCart" to="/cart">Finalizar compra</Link>
+        ) : (
+          <Counter stock={5} onAdd={onAdd} num={1} />
+        )}
       </div>
     </div>
   );

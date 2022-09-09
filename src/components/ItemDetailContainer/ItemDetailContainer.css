@@ -1,3 +1,20 @@
-.inactive {
-    display: none;
+.goCart {
+  background-color: #ffffff;
+  border: #111111 1px solid;
+  color: #111;
+  margin: 20px 0 0;
+  padding: 5px 9px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.linkCart {
+  text-decoration: none;
+  color: #111;
+  font-weight: 700;
+}
+
+.linkCart:hover {
+  color: red;
 }
