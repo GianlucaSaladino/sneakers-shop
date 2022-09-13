@@ -1,22 +1,28 @@
+import "./ItemDetailContainer.css";
+
 import React, { useState } from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import Counter from "../Counter/Counter";
-import "./ItemDetailContainer.css";
 import { Link } from "react-router-dom";
+import { useCartContext } from "../context/CartContext";
 
-const ItemDetailContainer = () => {
+const ItemDetailContainer = ({ data }) => {
   const [goToCart, setGoToCart] = useState(false);
+  const { addProduct } = useCartContext();
 
-  function onAdd(count) {
-    console.log(`Se han agregado ${count} productos`);
+  const onAdd = (quantity) => {
+    // console.log(`Se han agregado ${count} productos`);
     setGoToCart(true);
-  }
+    addProduct(data, quantity);
+  };
   return (
     <div>
       <ItemDetail />
       <div className="goCart">
         {goToCart ? (
-          <Link className="linkCart" to="/cart">Finalizar compra</Link>
+          <Link className="linkCart" to="/cart">
+            Finalizar compra
+          </Link>
         ) : (
           <Counter stock={5} onAdd={onAdd} num={1} />
         )}

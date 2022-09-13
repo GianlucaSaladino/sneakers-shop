@@ -7,11 +7,13 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import FooterComponent from "./components/Footer/FooterComponent";
+import CartProvider from "./components/context/CartContext";
 
 function App() {
   return (
     <Router>
       <div className="App">
+      <CartProvider>
         <NavBar />
         <Routes>
           <Route path="/sneakers" element={<ItemListContainer />} />
@@ -25,6 +27,7 @@ function App() {
           <Route path="*" element={<Home />} />
         </Routes>
         <FooterComponent />
+    </CartProvider>
       </div>
     </Router>
   );
