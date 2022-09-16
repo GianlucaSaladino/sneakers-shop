@@ -1,419 +1,449 @@
-import converseBlack from "../img/sneakers/converse/converse-chuck-black.jpg";
-import converseBlue from "../img/sneakers/converse/converse-chuck-blue.jpg";
-import converseBrown from "../img/sneakers/converse/converse-chuck-brown.jpg";
-import converseDots from "../img/sneakers/converse/converse-chuck-dots.jpg";
-import converseGreen from "../img/sneakers/converse/converse-chuck-green.jpg";
-import converseOrange from "../img/sneakers/converse/converse-chuck-orange.jpg";
-import conversePride from "../img/sneakers/converse/converse-chuck-pride.jpg";
-import converseRainbow from "../img/sneakers/converse/converse-chuck-rainbow.jpg";
-import converseRed from "../img/sneakers/converse/converse-chuck-red.jpg";
-import converseWhite from "../img/sneakers/converse/converse-chuck-white.jpg";
-import jordan1Ko from "../img/sneakers/jordan/air-jordan-1-ko.webp";
-import jordan1MidRedBlack from "../img/sneakers/jordan/air-jordan-1-mid-red-black.webp";
-import jordan1MidSe from "../img/sneakers/jordan/air-jordan-1-mid-se.webp";
-import jordan1Mid from "../img/sneakers/jordan/air-jordan-1-mid.webp";
-import jordan1RetroHighRed from "../img/sneakers/jordan/air-jordan-1-retro-high-og-red.webp";
-import jordan1RetroHighOg from "../img/sneakers/jordan/air-jordan-1-retro-high-og.webp";
-import jordan1UtilityQ from "../img/sneakers/jordan/air-jordan-1-utility-q.webp";
-import nikeAirForce1Black from "../img/sneakers/nike/nike-air-force-1-black.webp";
-import nikeAirForce1IceCream from "../img/sneakers/nike/nike-air-force-1-ice-cream.webp";
-import nikeAirForce1Lv8 from "../img/sneakers/nike/nike-air-force-1-lv8.webp";
-import nikeAirForce1 from "../img/sneakers/nike/nike-air-force-1.webp";
-import nikeBlazerLowPremiumVintage from "../img/sneakers/nike/nike-blazer-low-premium-vintage.webp";
-import nikeBlazerLowPrm from "../img/sneakers/nike/nike-blazer-low-prm.webp";
-import nikeBlazerLowRetroVintage from "../img/sneakers/nike/nike-blazer-low-retro-vintage.webp";
-import nikeBlazerLowRetro from "../img/sneakers/nike/nike-blazer-low-retro.webp";
-import yeezyBlue from "../img/sneakers/yeezy/yeezy-blue.jpg";
-import yeezyCinder from "../img/sneakers/yeezy/yeezy-cinder.jpg";
-import yeezyCopper from "../img/sneakers/yeezy/yeezy-copper.jpg";
-import yeezyOnyx from "../img/sneakers/yeezy/yeezy-onyx.jpg";
-import yeezyRed from "../img/sneakers/yeezy/yeezy-red.jpg";
-import yeezyRock from "../img/sneakers/yeezy/yeezy-rock.jpg";
-import yeezySalt from "../img/sneakers/yeezy/yeezy-salt.jpg";
-import yeezySesame from "../img/sneakers/yeezy/yeezy-sesame.jpg";
-import yeezyUtilityBeluga from "../img/sneakers/yeezy/yeezy-utility-beluga.jpg";
-import yeezyUtilityBlack from "../img/sneakers/yeezy/yeezy-utility-black.jpg";
-import yeezyWaveRunner from "../img/sneakers/yeezy/yeezy-wave-runner.jpg";
-import yeezyWhite from "../img/sneakers/yeezy/yeezy-white.jpg";
+import converseBlack from "../../img/sneakers/converse/converse-chuck-black.jpg";
+import converseBlue from "../../img/sneakers/converse/converse-chuck-blue.jpg";
+import converseBrown from "../../img/sneakers/converse/converse-chuck-brown.jpg";
+import converseDots from "../../img/sneakers/converse/converse-chuck-dots.jpg";
+import converseGreen from "../../img/sneakers/converse/converse-chuck-green.jpg";
+import converseOrange from "../../img/sneakers/converse/converse-chuck-orange.jpg";
+import conversePride from "../../img/sneakers/converse/converse-chuck-pride.jpg";
+import converseRainbow from "../../img/sneakers/converse/converse-chuck-rainbow.jpg";
+import converseRed from "../../img/sneakers/converse/converse-chuck-red.jpg";
+import converseWhite from "../../img/sneakers/converse/converse-chuck-white.jpg";
+import jordan1Ko from "../../img/sneakers/jordan/air-jordan-1-ko.webp";
+import jordan1MidRedBlack from "../../img/sneakers/jordan/air-jordan-1-mid-red-black.webp";
+import jordan1MidSe from "../../img/sneakers/jordan/air-jordan-1-mid-se.webp";
+import jordan1Mid from "../../img/sneakers/jordan/air-jordan-1-mid.webp";
+import jordan1RetroHighRed from "../../img/sneakers/jordan/air-jordan-1-retro-high-og-red.webp";
+import jordan1RetroHighOg from "../../img/sneakers/jordan/air-jordan-1-retro-high-og.webp";
+import jordan1UtilityQ from "../../img/sneakers/jordan/air-jordan-1-utility-q.webp";
+import nikeAirForce1Black from "../../img/sneakers/nike/nike-air-force-1-black.webp";
+import nikeAirForce1IceCream from "../../img/sneakers/nike/nike-air-force-1-ice-cream.webp";
+import nikeAirForce1Lv8 from "../../img/sneakers/nike/nike-air-force-1-lv8.webp";
+import nikeAirForce1 from "../../img/sneakers/nike/nike-air-force-1.webp";
+import nikeBlazerLowPremiumVintage from "../../img/sneakers/nike/nike-blazer-low-premium-vintage.webp";
+import nikeBlazerLowPrm from "../../img/sneakers/nike/nike-blazer-low-prm.webp";
+import nikeBlazerLowRetroVintage from "../../img/sneakers/nike/nike-blazer-low-retro-vintage.webp";
+import nikeBlazerLowRetro from "../../img/sneakers/nike/nike-blazer-low-retro.webp";
+import yeezyBlue from "../../img/sneakers/yeezy/yeezy-blue.jpg";
+import yeezyCinder from "../../img/sneakers/yeezy/yeezy-cinder.jpg";
+import yeezyCopper from "../../img/sneakers/yeezy/yeezy-copper.jpg";
+import yeezyOnyx from "../../img/sneakers/yeezy/yeezy-onyx.jpg";
+import yeezyRed from "../../img/sneakers/yeezy/yeezy-red.jpg";
+import yeezyRock from "../../img/sneakers/yeezy/yeezy-rock.jpg";
+import yeezySalt from "../../img/sneakers/yeezy/yeezy-salt.jpg";
+import yeezySesame from "../../img/sneakers/yeezy/yeezy-sesame.jpg";
+import yeezyUtilityBeluga from "../../img/sneakers/yeezy/yeezy-utility-beluga.jpg";
+import yeezyUtilityBlack from "../../img/sneakers/yeezy/yeezy-utility-black.jpg";
+import yeezyWaveRunner from "../../img/sneakers/yeezy/yeezy-wave-runner.jpg";
+import yeezyWhite from "../../img/sneakers/yeezy/yeezy-white.jpg";
 
 export const products = [
   {
-    id: 1,
-    img: [converseBlack],
-    name: "Converse Chuck 70 Black",
-    price: 100,
-    description:
+    productId: 1,
+    stock: 10,
+    productImage: [converseBlack],
+    productName: "Converse Chuck 70 Black",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "converse",
+    productCategory: "converse",
   },
   {
-    id: 2,
-    img: [converseBlue],
-    name: "Converse Chuck 70 Blue",
-    price: 100,
-    description:
+    productId: 2,
+    stock: 10,
+    productImage: [converseBlue],
+    productName: "Converse Chuck 70 Blue",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "converse",
+    productCategory: "converse",
   },
   {
-    id: 3,
-    img: [converseBrown],
-    name: "Converse Chuck 70 Brown",
-    price: 100,
-    description:
+    productId: 3,
+    stock: 10,
+    productImage: [converseBrown],
+    productName: "Converse Chuck 70 Brown",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "converse",
+    productCategory: "converse",
   },
   {
-    id: 4,
-    img: [converseDots],
-    name: "Converse Chuck 70 Dots",
-    price: 100,
-    description:
+    productId: 4,
+    stock: 10,
+    productImage: [converseDots],
+    productName: "Converse Chuck 70 Dots",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "converse",
+    productCategory: "converse",
   },
   {
-    id: 5,
-    img: [converseGreen],
-    name: "Converse Chuck 70 Green",
-    price: 100,
-    description:
+    productId: 5,
+    stock: 10,
+    productImage: [converseGreen],
+    productName: "Converse Chuck 70 Green",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "converse",
+    productCategory: "converse",
   },
   {
-    id: 6,
-    img: [converseOrange],
-    name: "Converse Chuck 70 Orange",
-    price: 100,
-    description:
+    productId: 6,
+    stock: 10,
+    productImage: [converseOrange],
+    productName: "Converse Chuck 70 Orange",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "converse",
+    productCategory: "converse",
   },
   {
-    id: 7,
-    img: [conversePride],
-    name: "Converse Chuck 70 Pride",
-    price: 100,
-    description:
+    productId: 7,
+    stock: 10,
+    productImage: [conversePride],
+    productName: "Converse Chuck 70 Pride",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "converse",
+    productCategory: "converse",
   },
   {
-    id: 8,
-    img: [converseRainbow],
-    name: "Converse Chuck 70 Rainbow",
-    price: 100,
-    description:
+    productId: 8,
+    stock: 10,
+    productImage: [converseRainbow],
+    productName: "Converse Chuck 70 Rainbow",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "converse",
+    productCategory: "converse",
   },
   {
-    id: 9,
-    img: [converseRed],
-    name: "Converse Chuck 70 Red",
-    price: 100,
-    description:
+    productId: 9,
+    stock: 10,
+    productImage: [converseRed],
+    productName: "Converse Chuck 70 Red",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "converse",
+    productCategory: "converse",
   },
   {
-    id: 10,
-    img: [converseWhite],
-    name: "Converse Chuck 70 White",
-    price: 100,
-    description:
+    productId: 10,
+    stock: 10,
+    productImage: [converseWhite],
+    productName: "Converse Chuck 70 White",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "converse",
+    productCategory: "converse",
   },
   {
-    id: 11,
-    img: [jordan1Ko],
-    name: "Jordan 1 KO",
-    price: 100,
-    description:
+    productId: 11,
+    stock: 10,
+    productImage: [jordan1Ko],
+    productName: "Jordan 1 KO",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "jordan",
+    productCategory: "jordan",
   },
   {
-    id: 12,
-    img: [jordan1MidRedBlack],
-    name: "Jordan 1 Mid Red Black",
-    price: 100,
-    description:
+    productId: 12,
+    stock: 10,
+    productImage: [jordan1MidRedBlack],
+    productName: "Jordan 1 Mid Red Black",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "jordan",
+    productCategory: "jordan",
   },
   {
-    id: 13,
-    img: [jordan1MidSe],
-    name: "Jordan 1 Mid SE",
-    price: 100,
-    description:
+    productId: 13,
+    stock: 10,
+    productImage: [jordan1MidSe],
+    productName: "Jordan 1 Mid SE",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "jordan",
+    productCategory: "jordan",
   },
   {
-    id: 14,
-    img: [jordan1Mid],
-    name: "Jordan 1 Mid",
-    price: 100,
-    description:
+    productId: 14,
+    stock: 10,
+    productImage: [jordan1Mid],
+    productName: "Jordan 1 Mid",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "jordan",
+    productCategory: "jordan",
   },
   {
-    id: 15,
-    img: [jordan1RetroHighRed],
-    name: "Jordan 1 Retro High Red",
-    price: 100,
-    description:
+    productId: 15,
+    stock: 10,
+    productImage: [jordan1RetroHighRed],
+    productName: "Jordan 1 Retro High Red",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "jordan",
+    productCategory: "jordan",
   },
   {
-    id: 16,
-    img: [jordan1RetroHighOg],
-    name: "Jordan 1 Retro High OG",
-    price: 100,
-    description:
+    productId: 16,
+    stock: 10,
+    productImage: [jordan1RetroHighOg],
+    productName: "Jordan 1 Retro High OG",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "jordan",
+    productCategory: "jordan",
   },
   {
-    id: 17,
-    img: [jordan1UtilityQ],
-    name: "Jordan 1 Utility Q",
-    price: 100,
-    description:
+    productId: 17,
+    stock: 10,
+    productImage: [jordan1UtilityQ],
+    productName: "Jordan 1 Utility Q",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "jordan",
+    productCategory: "jordan",
   },
   {
-    id: 18,
-    img: [nikeAirForce1Black],
-    name: "Nike Air Force 1 Black",
-    price: 100,
-    description:
+    productId: 18,
+    stock: 10,
+    productImage: [nikeAirForce1Black],
+    productName: "Nike Air Force 1 Black",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "low",
-    brand: "nike",
+    productCategory: "nike",
   },
   {
-    id: 19,
-    img: [nikeAirForce1IceCream],
-    name: "Nike Air Force 1 Ice Cream",
-    price: 100,
-    description:
+    productId: 19,
+    stock: 10,
+    productImage: [nikeAirForce1IceCream],
+    productName: "Nike Air Force 1 Ice Cream",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "low",
-    brand: "nike",
+    productCategory: "nike",
   },
   {
-    id: 20,
-    img: [nikeAirForce1Lv8],
-    name: "Nike Air Force 1 LV8",
-    price: 100,
-    description:
+    productId: 20,
+    stock: 10,
+    productImage: [nikeAirForce1Lv8],
+    productName: "Nike Air Force 1 LV8",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "low",
-    brand: "nike",
+    productCategory: "nike",
   },
   {
-    id: 21,
-    img: [nikeAirForce1],
-    name: "Nike Air Force 1",
-    price: 100,
-    description:
+    productId: 21,
+    stock: 10,
+    productImage: [nikeAirForce1],
+    productName: "Nike Air Force 1",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "low",
-    brand: "nike",
+    productCategory: "nike",
   },
   {
-    id: 22,
-    img: [nikeBlazerLowPremiumVintage],
-    name: "Nike Blazer Low Premium Vintage",
-    price: 100,
-    description:
+    productId: 22,
+    stock: 10,
+    productImage: [nikeBlazerLowPremiumVintage],
+    productName: "Nike Blazer Low Premium Vintage",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "low",
-    brand: "nike",
+    productCategory: "nike",
   },
   {
-    id: 23,
-    img: [nikeBlazerLowPrm],
-    name: "Nike Blazer Low Prm",
-    price: 100,
-    description:
+    productId: 23,
+    stock: 10,
+    productImage: [nikeBlazerLowPrm],
+    productName: "Nike Blazer Low Prm",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "low",
-    brand: "nike",
+    productCategory: "nike",
   },
   {
-    id: 24,
-    img: [nikeBlazerLowRetroVintage],
-    name: "Nike Blazer Low Retro Vintage",
-    price: 100,
-    description:
+    productId: 24,
+    stock: 10,
+    productImage: [nikeBlazerLowRetroVintage],
+    productName: "Nike Blazer Low Retro Vintage",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "low",
-    brand: "nike",
+    productCategory: "nike",
   },
   {
-    id: 25,
-    img: [nikeBlazerLowRetro],
-    name: "Nike Blazer Low Retro",
-    price: 100,
-    description:
+    productId: 25,
+    stock: 10,
+    productImage: [nikeBlazerLowRetro],
+    productName: "Nike Blazer Low Retro",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "low",
-    brand: "nike",
+    productCategory: "nike",
   },
   {
-    id: 26,
-    img: [yeezyBlue],
-    name: "Yeezy Blue",
-    price: 100,
-    description:
+    productId: 26,
+    stock: 10,
+    productImage: [yeezyBlue],
+    productName: "Yeezy Blue",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "yeezy",
+    productCategory: "yeezy",
   },
   {
-    id: 27,
-    img: [yeezyCinder],
-    name: "Yeezy Cinder",
-    price: 100,
-    description:
+    productId: 27,
+    stock: 10,
+    productImage: [yeezyCinder],
+    productName: "Yeezy Cinder",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "yeezy",
+    productCategory: "yeezy",
   },
   {
-    id: 28,
-    img: [yeezyCopper],
-    name: "Yeezy Copper",
-    price: 100,
-    description:
+    productId: 28,
+    stock: 10,
+    productImage: [yeezyCopper],
+    productName: "Yeezy Copper",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "yeezy",
+    productCategory: "yeezy",
   },
   {
-    id: 29,
-    img: [yeezyOnyx],
-    name: "Yeezy Onyx",
-    price: 100,
-    description:
+    productId: 29,
+    stock: 10,
+    productImage: [yeezyOnyx],
+    productName: "Yeezy Onyx",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "yeezy",
+    productCategory: "yeezy",
   },
   {
-    id: 30,
-    img: [yeezyRed],
-    name: "Yeezy Red",
-    price: 100,
-    description:
+    productId: 30,
+    stock: 10,
+    productImage: [yeezyRed],
+    productName: "Yeezy Red",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "yeezy",
+    productCategory: "yeezy",
   },
   {
-    id: 31,
-    img: [yeezyRock],
-    name: "Yeezy Rock",
-    price: 100,
-    description:
+    productId: 31,
+    stock: 10,
+    productImage: [yeezyRock],
+    productName: "Yeezy Rock",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "yeezy",
+    productCategory: "yeezy",
   },
   {
-    id: 32,
-    img: [yeezySalt],
-    name: "Yeezy Salt",
-    price: 100,
-    description:
+    productId: 32,
+    stock: 10,
+    productImage: [yeezySalt],
+    productName: "Yeezy Salt",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "yeezy",
+    productCategory: "yeezy",
   },
   {
-    id: 33,
-    img: [yeezySesame],
-    name: "Yeezy Sesame",
-    price: 100,
-    description:
+    productId: 33,
+    stock: 10,
+    productImage: [yeezySesame],
+    productName: "Yeezy Sesame",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "yeezy",
+    productCategory: "yeezy",
   },
   {
-    id: 34,
-    img: [yeezyUtilityBeluga],
-    name: "Yeezy Utility Beluga",
-    price: 100,
-    description:
+    productId: 34,
+    stock: 10,
+    productImage: [yeezyUtilityBeluga],
+    productName: "Yeezy Utility Beluga",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "yeezy",
+    productCategory: "yeezy",
   },
   {
-    id: 35,
-    img: [yeezyUtilityBlack],
-    name: "Yeezy Utility Black",
-    price: 100,
-    description:
+    productId: 35,
+    stock: 10,
+    productImage: [yeezyUtilityBlack],
+    productName: "Yeezy Utility Black",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "yeezy",
+    productCategory: "yeezy",
   },
   {
-    id: 36,
-    img: [yeezyWaveRunner],
-    name: "Yeezy Wave Runner",
-    price: 100,
-    description:
+    productId: 36,
+    stock: 10,
+    productImage: [yeezyWaveRunner],
+    productName: "Yeezy Wave Runner",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "yeezy",
+    productCategory: "yeezy",
   },
   {
-    id: 37,
-    img: [yeezyWhite],
-    name: "Yeezy White",
-    price: 100,
-    description:
+    productId: 37,
+    stock: 10,
+    productImage: [yeezyWhite],
+    productName: "Yeezy White",
+    productPrice: 100,
+    productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
     type: "high",
-    brand: "yeezy",
+    productCategory: "yeezy",
   },
 ];
 
-const getFetch = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve(products);
-    reject((err) => console.log(err));
-  }, 3000);
-});
 
-export default getFetch;

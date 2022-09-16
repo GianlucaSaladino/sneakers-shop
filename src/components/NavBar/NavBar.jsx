@@ -1,86 +1,82 @@
-import "./NavBar.css";
-import CartNav from "../Cart/CartNav/CartNav";
-import { Link } from "react-router-dom";
-
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import CartWidget from "../CartWidget/CartWidget";
+import { Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-const NavBar = () => {
+function NavScrollExample() {
   return (
-    <Navbar text="dark" bg="light" expand="lg" sticky="top">
+    <Navbar text="dark" bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#">
-          <Nav.Link href="#">
-            <Link
-              className="logo-brand"
-              style={{ color: "#000", textDecoration: "none" }}
-              to="/"
-            >
-              <img src="https://www.vectorkhazana.com/assets/images/products/Sneaker.png" alt="" />
+        <Navbar.Brand style={{ fontWeight: "bold" }}>
+          <Nav.Link className="nav-links" href="#">
+            <Link style={{ color: "#000", textDecoration: "none" }} to="/">
+              <img
+                style={{ height: "2.5rem", width: "2.5rem" }}
+                src="https://www.vectorkhazana.com/assets/images/products/Sneaker.png"
+                alt=""
+              />{" "}
               GS SNEAKERS
             </Link>
           </Nav.Link>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: "150px" }}
+            navbarScroll
+          >
             <Nav.Link className="nav-links" href="#">
               <Link
-                className="product-hover"
-                style={{ color: "rgba(0, 0, 0, 0.55)", textDecoration: "none" }}
+                style={{ color: "#000", textDecoration: "none" }}
                 to="/sneakers"
               >
                 Sneakers
               </Link>
             </Nav.Link>
-            <NavDropdown className="product-hover" title="Categories" id="basic-nav-dropdown">
-              <Nav.Link className="nav-links" href="#">
-                <Link
-                  className="dropdown-item-hover"
-                  style={{ color: "#000", textDecoration: "none" }}
-                  to="/sneakers/converse"
-                >
-                  Converse
-                </Link>
-              </Nav.Link>
-              <Nav.Link className="nav-links" href="#">
-                <Link
-                  className="dropdown-item-hover"
-                  style={{ color: "#000", textDecoration: "none" }}
-                  to="/sneakers/jordan"
-                >
-                  Jordan
-                </Link>
-              </Nav.Link>
-              <Nav.Link className="nav-links" href="#">
-                <Link
-                  className="dropdown-item-hover"
-                  style={{ color: "#000", textDecoration: "none" }}
-                  to="/sneakers/nike"
-                >
-                  Nike
-                </Link>
-              </Nav.Link>
-              <Nav.Link className="nav-links" href="#">
-                <Link
-                  className="dropdown-item-hover"
-                  style={{ color: "#000", textDecoration: "none" }}
-                  to="/sneakers/yeezy"
-                >
-                  Yeezy
-                </Link>
-              </Nav.Link>
-            </NavDropdown>
+            <Nav.Link className="nav-links" href="#">
+              <Link
+                style={{ color: "#000", textDecoration: "none" }}
+                to="/converse"
+              >
+                Converse
+              </Link>
+            </Nav.Link>
+            <Nav.Link className="nav-links" href="#">
+              <Link
+                style={{ color: "#000", textDecoration: "none" }}
+                to="/jordan"
+              >
+                Jordan
+              </Link>
+            </Nav.Link>
+            <Nav.Link className="nav-links" href="#">
+              <Link
+                style={{ color: "#000", textDecoration: "none" }}
+                to="/nike"
+              >
+                Nike
+              </Link>
+            </Nav.Link>
+            <Nav.Link className="nav-links" href="#">
+              <Link
+                style={{ color: "#000", textDecoration: "none" }}
+                to="/yeezy"
+              >
+                Yeezy
+              </Link>
+            </Nav.Link>
           </Nav>
           <div style={{ cursor: "pointer", fontSize: "25px" }}>
-            <CartNav />
+            <CartWidget />
           </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
-};
+}
 
-export default NavBar;
+export default NavScrollExample;
