@@ -5,14 +5,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  
 }
 
-.nav-links {
-  color: #000;
-  font-weight: 600;
-  font-size: 25px;
-}
+
 
 .itemCart_container {
   display: flex;

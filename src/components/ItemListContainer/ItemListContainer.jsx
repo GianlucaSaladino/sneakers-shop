@@ -1,65 +1,41 @@
-import React, { useState, useEffect } from "react";
-import styled from "styled-components";
-import { products } from "../Database/Database";
+import "./ItemListContainer.css";
+import React, { useEffect, useState } from "react";
 import ItemList from "../ItemList/ItemList";
+import products from "../Database//Database";
 import { useParams } from "react-router-dom";
 
-function ItemListContainer() {
-  const { tipoProducto } = useParams();
-  console.log(tipoProducto);
-  const [productos, setProductos] = useState([]);
+const ItemListContainer = () => {
+  const [items, setItems] = useState([]);
 
-  const getFetch = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve(products);
-      reject((err) => console.log(err));
-    }, 3000);
-  });
+  const { tipoProducto } = useParams();
 
   useEffect(() => {
-    getFetch.then((resultado) => {
-      if (!tipoProducto) {
-        setProductos(resultado);
-      } else {
-        const nuevaLista = resultado.filter(
-          (item) => item.productCategory === tipoProducto
-        );
-        setProductos(nuevaLista);
-      }
+    const getItems = new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(products);
+      }, 1000);
     });
+    if (tipoProducto) {
+      getItems.then((result) => {
+        setItems(
+          result.filter((item) => item.productCategory === tipoProducto)
+        );
+      });
+    } else {
+      getItems.then((result) => {
+        setItems(result);
+      });
+    }
   }, [tipoProducto]);
 
   return (
-    <ItemListContainerStyled>
-      <h1>Productos</h1>
-      <div className="item-list-container">
-        <ItemList items={productos} />
+    <>
+      <h1 className="title">Products:</h1>
+      <div className="itemListContainer">
+        <ItemList items={items} />
       </div>
-    </ItemListContainerStyled>
+    </>
   );
-}
+};
 
 export default ItemListContainer;
-
-const ItemListContainerStyled = styled.div`
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  h1 {
-    color: #000;
-  }
-  .item-list-container {
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-`;

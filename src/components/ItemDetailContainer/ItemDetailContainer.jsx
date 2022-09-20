@@ -1,16 +1,25 @@
-import React from "react";
-import { products } from "../Database/Database";
+import React, { useEffect, useState } from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
+import products from "../Database//Database";
 
-function ItemDetailContainer() {
+const ItemDetailContainer = () => {
+  const [item, setItem] = useState({});
   const { id } = useParams();
 
-  return (
-    <div style={{ margin: "50px" }} className="item-detail-container">
-      <ItemDetail item={products[id - 1]} />
-    </div>
-  );
-}
+  useEffect(() => {
+    const getItem = new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(products);
+      }, 1000);
+    });
+
+    getItem.then((result) => {
+      setItem(result.find((sneaker) => sneaker.productId === parseInt(id)));
+    });
+  }, [id]);
+
+  return <ItemDetail item={item} />;
+};
 
 export default ItemDetailContainer;

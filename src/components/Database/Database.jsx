@@ -34,9 +34,8 @@ import yeezySesame from "../../img/sneakers/yeezy/yeezy-sesame.jpg";
 import yeezyUtilityBeluga from "../../img/sneakers/yeezy/yeezy-utility-beluga.jpg";
 import yeezyUtilityBlack from "../../img/sneakers/yeezy/yeezy-utility-black.jpg";
 import yeezyWaveRunner from "../../img/sneakers/yeezy/yeezy-wave-runner.jpg";
-import yeezyWhite from "../../img/sneakers/yeezy/yeezy-white.jpg";
 
-export const products = [
+const products = [
   {
     productId: 1,
     stock: 10,
@@ -433,17 +432,6 @@ export const products = [
     type: "high",
     productCategory: "yeezy",
   },
-  {
-    productId: 37,
-    stock: 10,
-    productImage: [yeezyWhite],
-    productName: "Yeezy White",
-    productPrice: 100,
-    productDescription:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas nesciunt. Quisquam, quae.",
-    type: "high",
-    productCategory: "yeezy",
-  },
 ];
 
-
+export default products;
