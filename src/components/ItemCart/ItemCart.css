@@ -7,8 +7,8 @@
 }
 
 .itemCart img{
-    width: 20%;
-    height: 20%;
+    max-width: 150px;
+    max-height: 150px;
     object-fit: cover;
 }
 

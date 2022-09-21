@@ -2,15 +2,16 @@ import "./Item.css";
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Item = ({ info }) => {
+
+const Item = ({ item }) => {
   return (
     <Link
       style={{ color: "#000", textDecoration: "none" }}
       className="itemInfo"
-      to={`/item/${info.productId}`}
+      to={`/item/${item.id}`}
     >
-      <img className="itemImage" src={info.productImage} alt="" />
-      <p>{info.productName}</p>
+      <img className="itemImage" src={item.productImage} alt="" />
+      <p>{item.productName}</p>
     </Link>
   );
 };

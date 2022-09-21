@@ -6,17 +6,14 @@ const ItemCart = ({ product }) => {
   const { removeProduct } = useCartContext();
   return (
     <div className="itemCart">
-      <img className="itemImage" src={product.item.productImage} alt="" />
-      <div>
-        <p>{product.item.productName}</p>
+      <div className="itemImage">
+        <img src={product.productImage} alt="" />
+      </div>
+        <p>{product.productName}</p>
+        <p>${product.productPrice}</p>
         <p>Cantidad: {product.quantity}</p>
-        <p>Precio: ${product.item.productPrice}</p>
-        <p>Subtotal: ${product.item.productPrice * product.quantity}</p>
-        <div className="itemCartButtons">
-          <button onClick={() => removeProduct(product.item.productId)}>
-            Eliminar
-          </button>
-        </div>
+      <div className="itemCartButtons">
+        <button onClick={() => removeProduct(product.id)}>Eliminar</button>
       </div>
     </div>
   );

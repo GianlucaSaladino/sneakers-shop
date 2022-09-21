@@ -7,14 +7,14 @@ const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
   const addProduct = (item, quantity) => {
-    const isInCart = cart.find((i) => i.item.productId === item.productId);
+    const isInCart = cart.find((product) => product.id === item.id);
     if (isInCart) {
       isInCart.quantity += quantity;
       setCart([...cart]);
     } else {
-      setCart([...cart, { item, quantity }]);
+      setCart([...cart, { ...item, quantity }]);
     }
-  };
+  }
 
   console.log("carrito: ", cart);
 
@@ -27,19 +27,15 @@ const CartProvider = ({ children }) => {
   };
 
   const removeProduct = (id) => {
-    setCart(cart.filter((product) => product.item.productId !== id));
+    setCart(cart.filter((product) => product.id !== id));
   };
 
   const totalProducts = () => {
-    return cart.reduce((acc, product) => {
-      return acc + product.quantity;
-    }, 0);
+    return cart.reduce((acc, product) => acc + product.quantity, 0);
   };
 
   const totalPrice = () => {
-    return cart.reduce((acc, product) => {
-      return acc + product.item.productPrice * product.quantity;
-    }, 0);
+    return cart.reduce((acc, product) => acc + product.productPrice * product.quantity, 0);
   };
 
   return (
