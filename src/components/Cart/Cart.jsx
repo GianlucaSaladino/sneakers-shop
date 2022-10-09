@@ -6,9 +6,14 @@ import { useCartContext } from "../../context/CartContext";
 import ItemCart from "../ItemCart/ItemCart";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
 
 const Cart = () => {
   const { cart, totalPrice } = useCartContext();
+
+  const MySwal = withReactContent(Swal)
 
   const sendOrder = (e) => {
     e.preventDefault();
@@ -30,10 +35,15 @@ const Cart = () => {
     const db = getFirestore();
     const orderCollection = collection(db, "orders");
     addDoc(orderCollection, order).then(({ id }) => console.log(id));
+    MySwal.fire({
+      title: <p>Gracias por tu compra!</p>,
+      text: "Tu orden ha sido enviada",
+      icon: "success",
+      confirmButtonText: "Ok",
+    });
     setTimeout(() => {
-      alert("Compra realizada con éxito");
       window.location.reload(false);
-    }, 3000);
+    }, 2000);
   };
 
   if (cart.length === 0) {
@@ -69,7 +79,6 @@ const Cart = () => {
           Confirmar Compra
         </Button>
       </Form>
-
     </>
   );
 };

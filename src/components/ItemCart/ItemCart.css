@@ -7,8 +7,8 @@
 }
 
 .itemCart img{
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 200px;
+    max-height: 200px;
     object-fit: cover;
 }
 
@@ -18,3 +18,39 @@
     padding: 15px;
 }
 
+.itemCart button{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 100;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.itemCart button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+@media screen and (max-width: 875px){
+    .itemCart{
+        flex-direction: column;
+    }
+
+    .itemCart img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .itemCart p{
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .itemCart button{
+        font-size: 16px;
+        padding: 5px;
+    }
+}

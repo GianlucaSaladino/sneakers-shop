@@ -16,8 +16,6 @@ const CartProvider = ({ children }) => {
     }
   }
 
-  // console.log("carrito: ", cart);
-
   const clearCart = () => {
     setCart([]);
   };
@@ -30,6 +28,24 @@ const CartProvider = ({ children }) => {
     setCart(cart.filter((product) => product.id !== id));
   };
 
+  const substractProduct = (id) => {
+    const product = cart.find((product) => product.id === id);
+    if (product.quantity > 1) {
+      product.quantity--;
+      setCart([...cart]);
+    } else {
+      removeProduct(id);
+    }
+  };
+  
+  const addOneProduct = (id) => {
+    const product = cart.find((product) => product.id === id);
+    if (product.quantity < product.stock) {
+      product.quantity++;
+      setCart([...cart]);
+    }
+  };
+  
   const totalProducts = () => {
     return cart.reduce((acc, product) => acc + product.quantity, 0);
   };
@@ -47,6 +63,8 @@ const CartProvider = ({ children }) => {
         addProduct,
         totalPrice,
         totalProducts,
+        substractProduct,
+        addOneProduct,
         cart,
       }}
     >
