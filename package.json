@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://gs-sneakers.000webhostapp.com/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

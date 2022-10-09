@@ -37,9 +37,9 @@ const Cart = () => {
     addDoc(orderCollection, order).then(({ id }) => console.log(id));
     MySwal.fire({
       title: <p>Gracias por tu compra!</p>,
-      text: "Tu orden ha sido enviada",
-      icon: "success",
-      confirmButtonText: "Ok",
+      text: "Tu orden de compra ha sido enviada",
+      icon: 'success',
+      confirmButtonText: 'Ok'
     });
     setTimeout(() => {
       window.location.reload(false);
@@ -67,13 +67,13 @@ const Cart = () => {
       </div>
       <Form style={{ padding: "0px 100px 20px 100px" }} onSubmit={sendOrder}>
         <Form.Group className="mb-3" controlId="formName">
-          <Form.Control type="text" placeholder="Nombre" />
+          <Form.Control required type="text" placeholder="Nombre" />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Control type="email" placeholder="Email" />
+          <Form.Control required type="email" placeholder="Email" />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formCellPhone">
-          <Form.Control type="number" placeholder="Teléfono" />
+          <Form.Control required type="number" placeholder="Teléfono" />
         </Form.Group>
         <Button variant="primary" type="submit">
           Confirmar Compra
